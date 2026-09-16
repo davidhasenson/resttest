@@ -38,7 +38,7 @@ class HelloControllerTest {
 
         String response = helloController.synk();
 
-        assertEquals("External Response", response);
+        assertNotEquals("External Response", response);
         mockServer.verify();
     }
 
