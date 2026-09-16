@@ -22,4 +22,4 @@ jobs:
           cache: "maven"
 
       - name: bygg och kör test
-        run: mvn -b package
+        run: mvn -B package
