@@ -21,5 +21,8 @@ jobs:
           distribution: "temurin"
           cache: "maven"
 
-      - name: bygg och kör test
-        run: mvn -B package
+      - name: kör test
+        run: mvn -B test
+
+      - name: bygg applikation
+        run: mvn -B package -DskipTest
